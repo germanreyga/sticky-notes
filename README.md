@@ -38,6 +38,8 @@ npm run dev
 yarn dev
 ```
 
+The app will start running on [http://localhost:3000/](localhost:3000).
+
 ## Code explanation and demo
 
-To be recorded...
+I recorded a live demo of the application as well as the explanation of the code. It can be seen on [this YouTube video](https://youtu.be/Kv0mtimdkkU).
