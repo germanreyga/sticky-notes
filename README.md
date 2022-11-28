@@ -40,9 +40,15 @@ yarn dev
 
 The app will start running on [http://localhost:3000/](localhost:3000).
 
+## Deployment
+
+I deployed the application on GitHub pages. You can [start using it here!](https://germanreyga.github.io/sticky-notes/)
+
 ## Code explanation and demo
 
 I recorded a live demo of the application as well as the explanation of the code. It can be seen on [this YouTube video](https://youtu.be/Kv0mtimdkkU).
+
+![image](https://user-images.githubusercontent.com/26470569/204338534-ae2e3967-017c-4f79-be2a-e3a9de002233.png)
 
 ## Screenshots
 
