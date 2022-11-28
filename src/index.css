@@ -1,22 +1,61 @@
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    padding: 1em;
+}
+
+.tools button,
+.tools input {
+    margin-bottom: 0.5em;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    font-size: 20px;
+}
+
+.tools span {
+    font-size: 30px;
+}
+
+.tools button {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #101010;
+    border-radius: 6%;
+    width: 2%;
+    height: fit-content;
+}
+
+.tools button:hover {
+    background-color: #454545;
+}
+
 .note {
     display: flex;
-    height: 10em;
-    width: 10em;
+    height: 15em;
+    width: 15em;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 0.5em;
+    border-radius: 0.25em;
     padding: 1em;
     z-index: 10;
 }
 
+.create-new-cluster {
+    width: 20%;
+    padding: 0.2%;
+    height: 100%;
+}
+
 .delete-note {
     margin-left: auto;
-    margin-right: -1.5em;
-    margin-top: -1.5em;
+    margin-right: -3em;
+    margin-top: -2.4em;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .delete-note:hover {
-    cursor: pointer;
     color: #808b96;
 }
 
@@ -30,13 +69,59 @@
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box; /* Firefox, other Gecko */
     box-sizing: border-box;
-    font-size: 7pt;
+    font-size: 20px;
+    font-family: "Trebuchet MS", sans-serif;
 }
 
 .notes-cluster {
     display: grid;
     gap: 0.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    background-color: #808b96;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     min-height: 10em;
+}
+
+.cluster-list {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
+    min-height: 10em;
+    grid-auto-flow: dense;
+}
+
+.notes-cluster-wrapper:first-child {
+    grid-column: 1 / -1 !important;
+}
+
+.notes-cluster-wrapper:nth-child(4n + 1) {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+
+.notes-cluster-wrapper:nth-child(2) {
+    grid-column-end: span 3;
+    grid-row-end: span 3;
+}
+
+.notes-cluster-wrapper {
+    display: grid;
+    padding: 1em;
+    margin: 1em;
+}
+
+.cluster-header {
+    text-align: center;
+    width: 20%;
+    background-color: white;
+    border: 0.25em solid #808080;
+    padding: 1em 2.5em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    justify-self: center;
+    letter-spacing: 1.5px;
+    max-height: 25px;
+    font-size: 30px;
+}
+
+.cluster-error {
+    color: red;
 }
