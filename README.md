@@ -43,3 +43,13 @@ The app will start running on [http://localhost:3000/](localhost:3000).
 ## Code explanation and demo
 
 I recorded a live demo of the application as well as the explanation of the code. It can be seen on [this YouTube video](https://youtu.be/Kv0mtimdkkU).
+
+## Screenshots
+
+### Zoom in
+
+![image](https://user-images.githubusercontent.com/26470569/204335695-30a0fe23-76f8-4f3d-932b-eb316ca9a078.png)
+
+### Zoom out
+
+![image](https://user-images.githubusercontent.com/26470569/204335522-a044716f-0cb2-45f6-889d-8e2ccbd282e0.png)
